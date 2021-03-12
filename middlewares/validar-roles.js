@@ -9,7 +9,6 @@ const validarRoles = (req, res, next)=>{
             mgs:'Se quiere verificar el rol sin antes validar el token primero'
         })
     }
-    
      if ( rol !== 'ADMIN_ROLE'){
          return res.status(401).json({
              msg:`El rol ${ rol } no tiene permitido realizar esta accion`
