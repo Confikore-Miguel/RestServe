@@ -16,9 +16,8 @@ const buscarUsuarios= async ( termino='', res= response )=>{
     
     if ( esMongoDB ){
         const usuario = await Usuario.findById(termino);
-        
         return res.json({
-            results: ( usuario) ? [ usuario ] :[] 
+            results: ( usuario ) ? [ usuario ] :[] 
         })
     }
     const regex = new RegExp(termino,'i');

@@ -8,16 +8,12 @@ const { crearProducto,
         deleteProducto 
     } = require('../controllers/productos.controller');
 
-const { esRolValido,
-        existEmail,
-        NoExistId, 
-        NoExistIdCategoria,
+const { NoExistIdCategoria,
         NoExisteProducto
         } = require('../helpers/db-validators');
 
 const { validarCampos,
         validarJWT,
-        permitirRol, 
         validarRoles
         } = require('../middlewares')
 

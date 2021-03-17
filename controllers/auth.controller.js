@@ -85,8 +85,7 @@ const googleSingin= async(req, res= response) =>{
             msg:'Token de google no es valido'
         })
     }
-    
-  
+
 }
 
 
